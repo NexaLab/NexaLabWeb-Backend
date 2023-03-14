@@ -1,6 +1,8 @@
 const nodemailer = require("nodemailer");
 
 
+
+
 const sendEmail = async ( req , res ) => {
 
     const transporter = await nodemailer.createTransport({
@@ -57,3 +59,4 @@ Phone No: ${ data.phoneNo }`,
 
 
 module.exports = sendEmail;
+

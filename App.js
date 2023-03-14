@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.use(cors({
-    origin: 'http://localhost:3000' // allow requests from this domain
+    origin: 'http://143.244.156.234/' // allow requests from this domain
   }));
 
 
@@ -45,7 +45,7 @@ const sendEmail = require("./controllers/SendEmail");
 
 
 
-app.get( "/" , ( req , res ) => {
+app.get( "/api/hello" , ( req , res ) => {
 
     res.send("App Running");
 
