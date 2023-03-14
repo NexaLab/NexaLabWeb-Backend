@@ -58,7 +58,7 @@ app.get( "/api/hello" , ( req , res ) => {
 
 
 
-app.post( "/mail" , sendEmail);
+app.post( "/api/mail" , sendEmail);
 
 
 
